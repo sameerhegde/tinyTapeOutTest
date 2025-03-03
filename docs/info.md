@@ -9,12 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+It takes two 4 bit inputs and gives the sum 5 bit as output 
 
 ## How to test
 
-Explain how to use your project
+give two inputs of 4 bit it gives sum of it 
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+you can use 7 segment display 
