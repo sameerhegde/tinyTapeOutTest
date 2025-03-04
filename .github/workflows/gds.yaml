@@ -18,21 +18,6 @@ jobs:
         with:
           flow: openlane2
 
-      - name: Debug - List Files to Find GDS Path
-        run: find . -type f | tee file_list.txt
-
-      - name: Upload File List as Artifact (Debugging)
-        uses: actions/upload-artifact@v3
-        with:
-          name: file-list
-          path: file_list.txt
-
-      - name: Upload GDS Artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: gds-file
-          path: "**/*.gds"
-
   precheck:
     needs: gds
     runs-on: ubuntu-24.04
