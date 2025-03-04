@@ -17,6 +17,9 @@ jobs:
         uses: TinyTapeout/tt-gds-action@tt10
         with:
           flow: openlane2
+      - name: Print GDS Directory
+          run: find . -type f -name "*.gds"
+
 
   precheck:
     needs: gds
