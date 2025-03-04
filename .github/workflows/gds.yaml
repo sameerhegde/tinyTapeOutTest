@@ -22,13 +22,13 @@ jobs:
         run: find . -type f | tee file_list.txt
 
       - name: Upload File List (Debugging)
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: file-list
           path: file_list.txt
 
       - name: Upload GDS Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: gds-file
           path: "**/*.gds"
